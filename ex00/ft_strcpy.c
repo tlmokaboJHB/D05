@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include <stdio.h>
 
 void	ft_putchar(char c)
 {
@@ -30,16 +29,4 @@ char	*ft_strcpy(char *dest, char *src)
 	}
 	dest[i] = '\0';
 	return dest;
-}
-int	main()
-{
-	char *a = "tlotlo";
-	int i;
-	i = 0;
-
-	while(a[i] != '\0')
-		i++;
-	char b[i];
-
-	printf("%s",ft_strcpy(b, a));
 }
